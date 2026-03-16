@@ -1,18 +1,12 @@
-[[headers]]
-  for = "/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"
+[build]
+  command = "pnpm build"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-[build]
-  base = "."
-  command = "pnpm build"
-  publish = "dist"
-  # functions = "./functions"
-
-[[context.production.plugins]]
-  package = "./build/plugins/netlify-bump-version"
+[dev]
+  command = "pnpm dev"
+  port = 3000

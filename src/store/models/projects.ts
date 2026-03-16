@@ -9,11 +9,6 @@ type Project = {
 
 const initialState: Project[] = [
   {
-    name: 'Connect Teams',
-    url: 'connect-teams',
-    videoID: 'connectTeamsReel'
-  },
-  {
     name: 'AI Requirements Assistant',
     url: 'ai-requirements',
     videoID: 'aiReqReel'
@@ -22,6 +17,11 @@ const initialState: Project[] = [
     name: 'FinRecon',
     url: 'finrecon',
     videoID: 'finreconReel'
+  },
+  {
+    name: 'Connect Teams',
+    url: 'connect-teams',
+    videoID: 'connectTeamsReel'
   }
 ]
 
