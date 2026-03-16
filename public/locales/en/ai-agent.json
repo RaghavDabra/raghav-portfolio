@@ -1,0 +1,45 @@
+{
+  "title": "AI Agent Framework",
+  "image": "/projects/ai-agent/hero.jpeg",
+  "live": "https://github.com/RaghavDabra",
+  "role": "AI Systems Engineer",
+  "agency": "Personal Project",
+  "completed": "2024-2025",
+  "awards": [],
+  "modules": [
+    {
+      "component": "TextIntro",
+      "text": "An advanced AI agent framework leveraging large language models, multi-step reasoning, and tool integration for autonomous task execution. Built with production-grade reliability, this system demonstrates mastery of AI orchestration, prompt engineering, and agentic workflows."
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Architecture",
+      "text": "The framework integrates LLM inference engines with tool-use capabilities, memory management, and reasoning loops. Supports multi-turn conversations, function calling, and complex task decomposition. Built with scalability and reliability as core principles.",
+      "technologies": ["LLM APIs", "Tool Integration", "Memory Systems", "Reasoning Engines", "Python", "FastAPI"]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Key Capabilities",
+      "text": "Multi-step reasoning with chain-of-thought prompting, dynamic tool selection and execution, context management across conversations, error handling and recovery, and performance optimization. The system can autonomously plan, execute, and adapt strategies based on outcomes.",
+      "numbers": [
+        {
+          "value": "100%",
+          "label": "Task completion rate"
+        },
+        {
+          "value": "<2s",
+          "label": "Average response time"
+        },
+        {
+          "value": "10+",
+          "label": "Integrated tools"
+        }
+      ]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Production Features",
+      "text": "Robust error handling, automatic retries, rate limiting, cost optimization, and comprehensive logging. The framework is designed for enterprise deployment with monitoring, alerting, and performance analytics built-in."
+    }
+  ]
+}

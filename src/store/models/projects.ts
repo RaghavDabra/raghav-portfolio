@@ -22,6 +22,11 @@ const initialState: Project[] = [
     name: 'Connect Teams',
     url: 'connect-teams',
     videoID: 'connectTeamsReel'
+  },
+  {
+    name: 'AI Agent Framework',
+    url: 'ai-agent',
+    videoID: 'aiAgentReel'
   }
 ]
 
