@@ -1,16 +1,16 @@
 {
   "title": "Connect Teams",
   "image": "/projects/connect-teams/hero.jpeg",
-  "live": "https://github.com/RaghavDabra",
-  "role": "Full-stack Architect & Engineer",
+  "live": "https://github.com/RaghavDabra/connect-teams",
+  "role": "Full-Stack Architect & Engineer",
   "agency": "Personal Project",
-  "completed": "2025",
+  "completed": "2024-2025",
   "awards": [],
   "modules": [
     {
       "component": "TextIntro",
-      "text": "Connect Teams is a production-ready enterprise collaboration platform designed to scale to 1M+ concurrent users. Built with a modern microservices architecture, it features real-time messaging, video calls, task management, and file sharing—all powered by Next.js, NestJS, PostgreSQL, Redis, and WebRTC."
-    },
+      "text": "Connect Teams is a production-ready enterprise collaboration platform architected for 1M+ concurrent users. This comprehensive system demonstrates full-stack mastery: microservices backend with NestJS, modern React frontend with Next.js, real-time communication via Socket.io, peer-to-peer video with WebRTC, and enterprise-grade infrastructure with Docker + Kubernetes. Designed to handle millions of transactions monthly with sub-100ms latency."
+    }
     {
       "component": "TextTwoColumns",
       "title": "Architecture Overview",
