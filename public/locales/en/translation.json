@@ -66,6 +66,110 @@
   },
   "contact": {
     "intro": "You can get in touch with me by writing to",
-    "social_intro": "You can find me on social and professional networks at"
+    "social_intro": "You can find me on social and professional networks at",
+    "resume_download": "Download Resume",
+    "resume_url": "/Raghav_Dabra_Resume.docx"
+  },
+  "awards": {
+    "title": "Certifications & Awards",
+    "certifications": [
+      {
+        "issuer": "IBM",
+        "name": "Cybersecurity Capstone: Breach Response Case Studies",
+        "date": "May 2021"
+      },
+      {
+        "issuer": "IBM",
+        "name": "Penetration Testing, Incident Response and Forensics",
+        "date": "2021"
+      },
+      {
+        "issuer": "IBM",
+        "name": "Cybersecurity Compliance Framework & System Administration",
+        "date": "Oct 2020"
+      },
+      {
+        "issuer": "IBM",
+        "name": "Cyber Threat Intelligence",
+        "date": "Sep 2020"
+      },
+      {
+        "issuer": "IBM",
+        "name": "Cybersecurity Roles, Processes & Operating System Security",
+        "date": "Aug 2020"
+      },
+      {
+        "issuer": "IBM",
+        "name": "Introduction to Cybersecurity Tools & Cyber Attacks",
+        "date": "Aug 2020"
+      },
+      {
+        "issuer": "IBM",
+        "name": "Network Security & Database Vulnerabilities",
+        "date": "Jul 2020"
+      },
+      {
+        "issuer": "Johns Hopkins University SAIS Online",
+        "name": "Python for Data Science",
+        "date": "2020"
+      },
+      {
+        "issuer": "Johns Hopkins University SAIS Online",
+        "name": "COVID-19 Contact Tracing",
+        "date": "Jul 2020"
+      },
+      {
+        "issuer": "IBM",
+        "name": "Database and SQL for Data Science",
+        "date": "Jul 2020"
+      },
+      {
+        "issuer": "DeepLearning.AI",
+        "name": "Structuring Machine Learning Projects",
+        "date": "Jul 2020"
+      },
+      {
+        "issuer": "DeepLearning.AI",
+        "name": "Artificial Intelligence",
+        "date": "Jul 2020"
+      },
+      {
+        "issuer": "IIT Madras Research Park (IITMRP)",
+        "name": "Ethical Hacking",
+        "date": "Aug 2019"
+      }
+    ],
+    "awards_list": [
+      {
+        "type": "Silver Award",
+        "company": "Bank of America",
+        "description": "For preventing potential global market disruption through critical production system optimization",
+        "date": "2023"
+      },
+      {
+        "type": "Bronze Award",
+        "company": "Bank of America",
+        "description": "For production stability and CRQ excellence",
+        "date": "2023"
+      },
+      {
+        "type": "Bronze Award",
+        "company": "Bank of America",
+        "description": "For production stability and CRQ excellence",
+        "date": "2023"
+      },
+      {
+        "type": "Bronze Award",
+        "company": "Bank of America",
+        "description": "For production stability and CRQ excellence",
+        "date": "2023"
+      },
+      {
+        "type": "Bronze Award",
+        "company": "Bank of America",
+        "description": "For production stability and CRQ excellence",
+        "date": "2023"
+      }
+    ]
   }
 }
