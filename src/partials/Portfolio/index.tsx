@@ -54,20 +54,17 @@ function Portfolio() {
 
       <div className={style.cardContainer} id="card-container" />
 
-      <video id="skReel" autoPlay muted loop playsInline className={style.video}>
-        <source src="/projects/sk/sk-reel.mp4" type="video/mp4" />
+      <video id="aiReqReel" autoPlay muted loop playsInline className={style.video}>
+        <source src="/projects/ai-req/reel.mp4" type="video/mp4" />
       </video>
-      <video id="aqReel" autoPlay muted loop playsInline className={style.video}>
-        <source src="/projects/aq/reel-aq.mp4" type="video/mp4" />
+      <video id="finreconReel" autoPlay muted loop playsInline className={style.video}>
+        <source src="/projects/finrecon/reel.mp4" type="video/mp4" />
       </video>
-      <video id="fbReel" autoPlay muted loop playsInline className={style.video}>
-        <source src="/projects/fb/fb-reel.mp4" type="video/mp4" />
+      <video id="connectTeamsReel" autoPlay muted loop playsInline className={style.video}>
+        <source src="/projects/connect-teams/reel.mp4" type="video/mp4" />
       </video>
-      <video id="feudiReel" autoPlay muted loop playsInline className={style.video}>
-        <source src="/projects/feudi/feudi-reel.mp4" type="video/mp4" />
-      </video>
-      <video id="claralunaReel" autoPlay muted loop playsInline className={style.video}>
-        <source src="/projects/claraluna/claraluna-reel.mp4" type="video/mp4" />
+      <video id="aiAgentReel" autoPlay muted loop playsInline className={style.video}>
+        <source src="/projects/ai-agent/reel.mp4" type="video/mp4" />
       </video>
     </Section>
   )

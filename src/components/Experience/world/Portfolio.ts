@@ -115,29 +115,24 @@ export default class Portfolio {
 
     this.projects = [
       {
-        name: 'Sketchin',
-        url: 'sketchin',
-        video: document.getElementById('skReel') as HTMLVideoElement
+        name: 'AI Requirements Assistant',
+        url: 'ai-requirements',
+        video: document.getElementById('aiReqReel') as HTMLVideoElement
       },
       {
-        name: 'AQuest',
-        url: 'aquest',
-        video: document.getElementById('aqReel') as HTMLVideoElement
+        name: 'FinRecon',
+        url: 'finrecon',
+        video: document.getElementById('finreconReel') as HTMLVideoElement
       },
       {
-        name: 'Fastweb',
-        url: 'fastweb',
-        video: document.getElementById('fbReel') as HTMLVideoElement
+        name: 'Connect Teams',
+        url: 'connect-teams',
+        video: document.getElementById('connectTeamsReel') as HTMLVideoElement
       },
       {
-        name: 'Feudi',
-        url: 'feudi',
-        video: document.getElementById('feudiReel') as HTMLVideoElement
-      },
-      {
-        name: 'Claraluna',
-        url: 'claraluna',
-        video: document.getElementById('claralunaReel') as HTMLVideoElement
+        name: 'AI Agent Framework',
+        url: 'ai-agent',
+        video: document.getElementById('aiAgentReel') as HTMLVideoElement
       }
     ]
 
