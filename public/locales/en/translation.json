@@ -1,0 +1,71 @@
+{
+  "loading": "Loading",
+  "enter": "Enter",
+  "role": "Role",
+  "agency": "Agency",
+  "completed": "Completed",
+  "riconoscimenti": "Awards",
+  "close": "Close",
+  "close project": "Close this project",
+  "go to project": "Go to",
+  "intro": {
+    "p1": {
+      "l1": "Software Engineering",
+      "l2": "meets AI & Data Innovation"
+    },
+    "p2": {
+      "l1": "Production systems at scale",
+      "l2": "with cutting-edge AI integration"
+    },
+    "p3": {
+      "l1": "I'm an AI & Software Engineer"
+    },
+    "p4": {
+      "l1": "They Call Me AMP."
+    },
+    "scroll_cta": {
+      "line1": "Scroll down",
+      "line2": "to explore my work"
+    }
+  },
+  "portfolio": {
+    "intro": [
+      "I build",
+      "production-grade systems<br />powered by AI.",
+      "From full-stack development to data pipelines, from LangChain integrations to enterprise architecture.",
+      "Plus, my passion: optimizing systems that process millions of records monthly."
+    ],
+    "portfolio": [
+      "Projects",
+      "I have worked with: <strong>Bank of America</strong>, <strong>Queue Solutions</strong>, <strong>Flying Woks</strong>, <strong>Thales</strong>, <strong>Bharti Airtel</strong>.<br /><br />",
+      "Here are some of my most impactful projects."
+    ]
+  },
+  "about": {
+    "intro": [
+      "I'm Raghav Dabra, based in <ImageMelbourne>Melbourne</ImageMelbourne>, a Software Engineer specializing in AI, Data Engineering, and Cybersecurity.",
+      "<pre>2+ years</pre>of enterprise experience at <ImageBoA>Bank of America</ImageBoA> owning production systems.",
+      "Currently pursuing a Master of Software Engineering at the <ImageUniMelb>University of Melbourne</ImageUniMelb>, focusing on ML, Cloud Architecture, and Database Systems.",
+      "I've built AI-powered systems using Anthropic Claude API, LangChain, and Cursor AI. Recognized with 1× Silver Award and 4× Bronze Awards for production excellence.",
+      "Today I think in Python, TypeScript, and AI-first architectures."
+    ],
+    "clan_title": ["Achievements", "Recognition"],
+    "clan": [
+      "At Bank of America, I owned critical 4BD/6BD monthly financial production cycles for EMBS, orchestrating 5+ concurrent batch pipelines across 4 distributed database systems with zero SLA breaches.",
+      "I built Python automation scripts that reduced critical cycle processing time by ~40%, eliminating recurring manual validation overhead across global financial reporting systems.",
+      "Recognized with 1× Silver Award for preventing potential global market disruption and 4× Bronze Awards for production stability and CRQ excellence.",
+      "Holds 7× IBM Cybersecurity certifications and has led penetration testing engagements identifying 12+ critical vulnerabilities across enterprise web applications."
+    ],
+    "method_title": "Technical<br /><pre>&</pre>Expertise",
+    "method": [
+      "Building scalable systems requires more than just code—it demands understanding of distributed systems, data pipelines, and production governance.",
+      "I specialize in full-stack development, Python automation, and AI integration.",
+      "I emphasize Agile methodologies, TDD, and continuous improvement for myself and teams.",
+      "If production excellence and technical innovation come on top of that, it is the ultimate satisfaction."
+    ]
+  },
+  "contact": {
+    "intro": "You can get in touch with me by writing to",
+    "social_intro": "You can find me on social and professional networks at"
+  }
+}

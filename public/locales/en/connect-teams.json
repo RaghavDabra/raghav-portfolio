@@ -1,0 +1,50 @@
+{
+  "title": "Connect Teams",
+  "image": "/projects/connect-teams/hero.jpeg",
+  "live": "https://github.com/RaghavDabra",
+  "role": "Full-stack Architect & Engineer",
+  "agency": "Personal Project",
+  "completed": "2025",
+  "awards": [],
+  "modules": [
+    {
+      "component": "TextIntro",
+      "text": "Connect Teams is a production-ready enterprise collaboration platform designed to scale to 1M+ concurrent users. Built with a modern microservices architecture, it features real-time messaging, video calls, task management, and file sharing—all powered by Next.js, NestJS, PostgreSQL, Redis, and WebRTC."
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Architecture Overview",
+      "text": "A comprehensive microservices + event-driven architecture supporting authentication, organizations, teams, channels, direct messaging, video calls, task management, and file uploads. The system uses PostgreSQL for persistence, Redis for caching, Socket.io for real-time events, and WebRTC for peer-to-peer video communication.",
+      "technologies": ["Next.js", "NestJS", "TypeScript", "PostgreSQL", "Redis", "Socket.io", "WebRTC", "Docker", "Kubernetes"]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Core Features",
+      "text": "Real-time messaging with threads and reactions, video/audio calls with WebRTC, task management with Kanban boards, calendar views, file management with S3 pre-signed URLs, multi-tenant organizations, JWT + OAuth authentication, and MFA support. The system is designed for enterprise-grade reliability and scalability.",
+      "numbers": [
+        {
+          "value": "18",
+          "label": "Database tables with UUID v4"
+        },
+        {
+          "value": "1M+",
+          "label": "Concurrent users target"
+        },
+        {
+          "value": "6",
+          "label": "Core microservices"
+        }
+      ]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Deployment & DevOps",
+      "text": "Containerized with Docker across 3 environments (dev, staging, prod). Kubernetes orchestration ensures high availability and auto-scaling. GitHub Actions CI/CD pipelines achieve sub-5-minute deployments. Infrastructure as Code with Terraform for AWS resources including S3, networking, and compute."
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Security & Performance",
+      "text": "Implements JWT + OAuth for authentication, MFA for enhanced security, and follows OWASP best practices. Redis caching strategy optimizes database queries. Soft-delete patterns maintain data integrity. The system is designed to handle millions of transactions monthly with sub-100ms latency."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "title": "FinRecon",
+  "image": "/projects/finrecon/hero.jpeg",
+  "live": "https://github.com/RaghavDabra",
+  "role": "Data Engineer & Backend Developer",
+  "agency": "Bank of America",
+  "completed": "2023-2024",
+  "awards": [],
+  "modules": [
+    {
+      "component": "TextIntro",
+      "text": "FinRecon is a financial data reconciliation engine built at Bank of America for EMBS (Enterprise Mortgage-Backed Securities). It automates reconciliation across 4 distributed database systems (Sybase IQ, Sybase ASE, Oracle, Netezza) with anomaly detection and comprehensive runbook documentation."
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "The Challenge",
+      "text": "Bank of America processes millions of mortgage-backed securities records monthly across Freddie Mac, Fannie Mae, and Ginnie Mae agency pools. Manual reconciliation was time-consuming, error-prone, and created bottlenecks in critical production cycles. The system needed to handle 100,000+ record datasets with sub-second query performance.",
+      "technologies": ["Python", "SQL", "Batch Processing", "Distributed Databases", "Anomaly Detection"]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Solution & Impact",
+      "text": "Built an automated reconciliation engine with intelligent anomaly detection across 4 database systems. Implemented sophisticated SQL query optimization through indexing and batch chunking strategies. Reduced manual overhead by ~60% and improved query performance by ~45%.",
+      "numbers": [
+        {
+          "value": "60%",
+          "label": "Manual overhead reduction"
+        },
+        {
+          "value": "45%",
+          "label": "Query performance improvement"
+        },
+        {
+          "value": "4",
+          "label": "Database systems integrated"
+        }
+      ]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Key Features",
+      "text": "Multi-source data reconciliation with anomaly detection, comprehensive runbook-style documentation for incident response, batch processing for 100,000+ record datasets, intelligent indexing strategies, and detailed audit trails. The system achieved zero SLA breaches across an 18-month tenure."
+    }
+  ]
+}
