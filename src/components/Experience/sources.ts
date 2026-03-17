@@ -118,6 +118,16 @@ const sources: Sources = [
     name: 'no3',
     type: 'texture',
     path: '/images/no3.jpg'
+  },
+  {
+    name: 'melbourne',
+    type: 'texture',
+    path: '/companies/melbourne.png'
+  },
+  {
+    name: 'unimelb',
+    type: 'texture',
+    path: '/companies/unimelb.png'
   }
 ]
 

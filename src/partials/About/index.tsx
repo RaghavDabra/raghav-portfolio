@@ -30,9 +30,9 @@ function About() {
                 <Trans
                   i18nKey={`about.intro.0`}
                   components={{
-                    ImageVenice: <ImageTrigger name="venice" />,
-                    ImageSketchin: <ImageTrigger name="sketchin" />,
-                    ImageTCMGTK: <ImageTrigger name="tcmgtk" sizes={[2, 3]} />
+                    ImageMelbourne: <ImageTrigger name="melbourne" sizes={[2, 2]} />,
+                    ImageBoA: <ImageTrigger name="venice" />,
+                    ImageUniMelb: <ImageTrigger name="unimelb" sizes={[2, 2]} />
                   }}
                 />
               </div>
@@ -61,9 +61,9 @@ function About() {
                 <Trans
                   i18nKey={`about.intro.${i + 2}`}
                   components={{
-                    ImageVenice: <ImageTrigger name="venice" />,
-                    ImageSketchin: <ImageTrigger name="sketchin" />,
-                    ImageTCMGTK: <ImageTrigger name="tcmgtk" sizes={[2, 3]} />
+                    ImageMelbourne: <ImageTrigger name="melbourne" sizes={[2, 2]} />,
+                    ImageBoA: <ImageTrigger name="venice" />,
+                    ImageUniMelb: <ImageTrigger name="unimelb" sizes={[2, 2]} />
                   }}
                 />
               </div>
