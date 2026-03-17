@@ -133,6 +133,11 @@ const sources: Sources = [
     name: 'boa',
     type: 'texture',
     path: '/companies/boa.png'
+  },
+  {
+    name: 'thales',
+    type: 'texture',
+    path: '/companies/thales.png'
   }
 ]
 

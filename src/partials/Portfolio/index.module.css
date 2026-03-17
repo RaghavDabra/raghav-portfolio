@@ -25,6 +25,7 @@
 
 .cardContainer {
   height: 200vh;
+  margin-bottom: var(--spc-10);
 }
 
 .video {
@@ -33,8 +34,10 @@
 
 .projectSection {
   padding-top: 15vh;
+  margin-bottom: var(--spc-8);
 
   @media (--md-l) {
     padding-top: 33vh;
+    margin-bottom: var(--spc-10);
   }
 }

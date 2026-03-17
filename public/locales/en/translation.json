@@ -37,7 +37,7 @@
     ],
     "portfolio": [
       "Projects",
-      "I have worked with: <strong>Bank of America</strong>, <strong>Queue Solutions</strong>, <strong>Flying Woks</strong>, <strong>Thales</strong>, <strong>Bharti Airtel</strong>.<br /><br />",
+      "I have worked with: <ImageBoA>Bank of America</ImageBoA>, <strong>Queue Solutions</strong>, <strong>Flying Woks</strong>, <ImageThales>Thales</ImageThales>, <strong>Bharti Airtel</strong>.<br /><br />",
       "Here are some of my most impactful projects."
     ]
   },
@@ -54,7 +54,7 @@
       "At Bank of America, I owned critical 4BD/6BD monthly financial production cycles for EMBS (Enterprise Mortgage-Backed Securities), orchestrating 5+ concurrent batch pipelines across 4 distributed database systems with zero SLA breaches across 18 months.",
       "Built Python automation scripts that reduced critical cycle processing time by ~40%, eliminating recurring manual validation overhead across global financial reporting systems. Performed multi-source data reconciliation across millions of loan-level records monthly.",
       "Led CRQ governance across 4 cross-functional global teams, managing 20+ production deployments with zero market-impact incidents. Contributed Java Spring enhancements; monitored via Splunk and AppDynamics. Resolved 12+ incident types with structured RCA and runbook documentation.",
-      "Recognized with 1× Silver Award for preventing potential global market disruption and 4× Bronze Awards for production stability and CRQ excellence. 7× IBM Cybersecurity certifications including penetration testing and incident response."
+      "Recognized with 1× Silver Award for preventing potential global market disruption and 4× Bronze Awards for production stability and CRQ excellence. 7× IBM Cybersecurity certifications including penetration testing and incident response. Johns Hopkins University certification in Data Science and Machine Learning."
     ],
     "method_title": "Technical<br /><pre>&</pre>Expertise",
     "method": [

@@ -6,6 +6,7 @@ import Section from 'components/Section'
 import Container, { Row } from 'components/Container'
 import ContentBlock from 'components/ContentBlock'
 import Heading from 'components/Heading'
+import ImageTrigger from 'components/ImageTrigger'
 import { Trans } from 'react-i18next'
 
 // Hooks
@@ -45,7 +46,10 @@ function Portfolio() {
         <Row start={2} end={1}>
           <ContentBlock>
             <div>
-              <Trans i18nKey="portfolio.portfolio.1" />
+              <Trans i18nKey="portfolio.portfolio.1" components={{
+                ImageBoA: <ImageTrigger name="boa" sizes={[2.5, 1.5]} />,
+                ImageThales: <ImageTrigger name="thales" sizes={[2.5, 1.5]} />
+              }} />
               <Trans i18nKey="portfolio.portfolio.2" />
             </div>
           </ContentBlock>
