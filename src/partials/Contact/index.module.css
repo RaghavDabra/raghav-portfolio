@@ -86,3 +86,19 @@
     }
   }
 }
+.resumeButton {
+  @mixin body-1;
+
+  display: inline-block;
+  padding: var(--spc-3) var(--spc-4);
+  margin-top: var(--spc-5);
+  border: 2px solid var(--color-white);
+  border-radius: 4px;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+  }
+}

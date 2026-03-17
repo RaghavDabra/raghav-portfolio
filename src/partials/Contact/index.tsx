@@ -24,6 +24,8 @@ function Contact() {
   const { t } = useTranslation('translation', { keyPrefix: 'contact' })
   const intro = t('intro')
   const socialIntro = t('social_intro')
+  const resumeUrl = t('resume_url') as string
+  const resumeDownloadText = t('resume_download') as string
 
   const { ref, inView } = useInView()
 
@@ -115,6 +117,21 @@ function Contact() {
                   </a>
                 </li>
               </ul>
+            </div>
+          </ContentBlock>
+        </Row>
+        <Row start={1} end={1}>
+          <ContentBlock>
+            <div>
+              <a
+                href={resumeUrl}
+                className={style.resumeButton}
+                onMouseEnter={overHandler}
+                onMouseLeave={outHandler}
+                download
+              >
+                {resumeDownloadText} <ExternalArrow />
+              </a>
             </div>
           </ContentBlock>
         </Row>
