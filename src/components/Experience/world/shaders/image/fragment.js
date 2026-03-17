@@ -11,10 +11,9 @@ const fragment = /* glsl */ `
   }
 
   void main(){
-      vec4 texColor = texture2D(uTexture, vUv);
+      // vec3 color = texture2D(uTexture, vUv).rgb;
       vec3 color = rgbShift(uTexture, vUv, uOffset * 5.0);
-      float alpha = texColor.a * uAlpha;
-      gl_FragColor = vec4(color, alpha);
+      gl_FragColor = vec4(color, uAlpha);
   }
 `
 

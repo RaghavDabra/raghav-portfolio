@@ -156,7 +156,7 @@ function About() {
         <Row start={1} end={1}>
           <div className={style.section}>
             <ContentBlock key={method[3]}>
-              <div className={style.finalStatement}>
+              <div>
                 <Trans i18nKey={`about.method.3`} />
               </div>
             </ContentBlock>

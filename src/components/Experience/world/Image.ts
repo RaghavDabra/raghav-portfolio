@@ -93,8 +93,6 @@ export default class Image {
       vertexShader,
       fragmentShader,
       transparent: true,
-      depthTest: false,
-      depthWrite: false,
       uniforms: {
         uTexture: { value: this.resources.items[this.settings.name] },
         uAlpha: { value: 0.0 },
