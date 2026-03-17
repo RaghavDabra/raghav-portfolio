@@ -45,6 +45,11 @@
       "component": "TextTwoColumns",
       "title": "Impact & Deployment",
       "text": "Deployed at Queue Solutions (University of Melbourne) for teaching, consulting, and academic use cases.\n\nThe system is now being used to accelerate requirements modelling across multiple research projects, demonstrating the practical value of AI-assisted development workflows in enterprise settings."
+    },
+    {
+      "component": "Media",
+      "src": "/projects/ai-req/architecture.png",
+      "alt": "AI Requirements Assistant Architecture"
     }
   ]
 }

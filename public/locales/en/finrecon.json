@@ -15,7 +15,7 @@
       "component": "TextTwoColumns",
       "title": "The Challenge",
       "text": "Bank of America processes millions of mortgage-backed securities records monthly across Freddie Mac, Fannie Mae, and Ginnie Mae agency pools.\n\nManual reconciliation was time-consuming, error-prone, and created bottlenecks in critical production cycles. The system needed to handle 100,000+ record datasets with sub-second query performance.",
-      "technologies": ["Python", "SQL", "Batch Processing", "Distributed Databases", "Anomaly Detection"]
+      "technologies": ["Python", "SQL", "Batch Processing", "Distributed Databases", "Anomaly Detection", "Splunk", "AppDynamics"]
     },
     {
       "component": "TextTwoColumns",
@@ -40,6 +40,16 @@
       "component": "TextTwoColumns",
       "title": "Key Features & Reliability",
       "text": "Multi-source data reconciliation with anomaly detection and comprehensive runbook-style documentation for incident response.\n\nBatch processing for 100,000+ record datasets with intelligent indexing strategies and detailed audit trails.\n\nAchieved zero SLA breaches across an 18-month tenure."
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Production Excellence",
+      "text": "Implemented comprehensive monitoring via Splunk and AppDynamics for real-time visibility into batch cycles.\n\nDeveloped detailed runbook documentation for 12+ incident types, enabling rapid incident response and resolution.\n\nContributed Java Spring enhancements to the broader EMBS platform infrastructure."
+    },
+    {
+      "component": "Media",
+      "src": "/projects/finrecon/architecture.png",
+      "alt": "FinRecon Architecture"
     }
   ]
 }

@@ -1,40 +1,45 @@
 {
-  "title": "Connect Teams - Enterprise Collaboration Platform",
+  "title": "Connect Teams",
   "image": "/projects/connect-teams/hero.jpeg",
-  "live": "https://github.com/RaghavDabra/connect-teams",
-  "role": "Lead Architect & Full-Stack Engineer",
+  "live": "https://github.com/RaghavDabra",
+  "role": "Full-Stack Engineer",
   "agency": "Personal Project",
-  "completed": "2024-2025",
+  "completed": "2024",
   "awards": [],
   "modules": [
     {
       "component": "TextIntro",
-      "text": "Connect Teams is a production-ready enterprise collaboration platform architected for 1M+ concurrent users.\n\nThis comprehensive system demonstrates full-stack mastery: microservices backend with NestJS, modern React frontend with Next.js, real-time communication via Socket.io, peer-to-peer video with WebRTC, and enterprise-grade infrastructure with Docker + Kubernetes.\n\nDesigned to handle millions of transactions monthly with sub-100ms latency."
+      "text": "Connect Teams is a comprehensive team collaboration and project management platform built with modern full-stack technologies.\n\nDesigned to enable seamless communication, task tracking, and project organization for distributed teams with enterprise-grade security and performance."
     },
     {
       "component": "TextTwoColumns",
-      "title": "Architecture Overview",
-      "text": "A comprehensive microservices + event-driven architecture supporting authentication, organizations, teams, channels, direct messaging, video calls, task management, and file uploads.\n\nThe system uses PostgreSQL for persistence, Redis for caching, Socket.io for real-time events, and WebRTC for peer-to-peer video communication.",
-      "technologies": ["Next.js", "NestJS", "TypeScript", "PostgreSQL", "Redis", "Socket.io", "WebRTC", "Docker", "Kubernetes"]
+      "title": "The Challenge",
+      "text": "Teams need a unified platform for collaboration that combines communication, task management, and project tracking without complexity.\n\nThe solution needed to support real-time updates, handle concurrent users, maintain data integrity, and scale to millions of transactions monthly.",
+      "technologies": ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Redis", "Docker", "Kubernetes"]
+    },
+    {
+      "component": "TextTwoColumns",
+      "title": "Architecture & Tech Stack",
+      "text": "Built with React + TypeScript frontend for responsive UI and type-safe development.\n\nNode.js + Express backend with PostgreSQL for relational data and Redis for caching and real-time updates.\n\nContainerized with Docker and orchestrated with Kubernetes for high availability and auto-scaling.",
+      "numbers": [
+        {
+          "value": "3",
+          "label": "Deployment environments"
+        },
+        {
+          "value": "<100ms",
+          "label": "API response latency"
+        },
+        {
+          "value": "99.9%",
+          "label": "Uptime SLA"
+        }
+      ]
     },
     {
       "component": "TextTwoColumns",
       "title": "Core Features",
-      "text": "Real-time messaging with threads and reactions, video/audio calls with WebRTC, task management with Kanban boards, and calendar views.\n\nFile management with S3 pre-signed URLs, multi-tenant organizations, JWT + OAuth authentication, and MFA support.\n\nDesigned for enterprise-grade reliability and scalability.",
-      "numbers": [
-        {
-          "value": "18",
-          "label": "Database tables with UUID v4"
-        },
-        {
-          "value": "1M+",
-          "label": "Concurrent users target"
-        },
-        {
-          "value": "6",
-          "label": "Core microservices"
-        }
-      ]
+      "text": "Real-time messaging with WebSocket integration for instant notifications.\n\nTask management with status tracking, assignments, and deadline management.\n\nProject organization with team collaboration spaces, file sharing, and activity feeds."
     },
     {
       "component": "TextTwoColumns",
@@ -45,6 +50,11 @@
       "component": "TextTwoColumns",
       "title": "Security & Performance",
       "text": "Implements JWT + OAuth for authentication, MFA for enhanced security, and follows OWASP best practices.\n\nRedis caching strategy optimizes database queries. Soft-delete patterns maintain data integrity.\n\nDesigned to handle millions of transactions monthly with sub-100ms latency."
+    },
+    {
+      "component": "Media",
+      "src": "/projects/connect-teams/architecture.png",
+      "alt": "Connect Teams Architecture"
     }
   ]
 }
