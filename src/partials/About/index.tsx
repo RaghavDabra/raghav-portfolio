@@ -181,6 +181,11 @@ function About() {
                   <p>Including penetration testing, incident response, and cybersecurity fundamentals</p>
                   <span className={style.awardYear}>2022-2024</span>
                 </div>
+                <div className={style.awardItem}>
+                  <div className={style.awardBadge}>Johns Hopkins University Certification</div>
+                  <p>Data Science and Machine Learning specialization</p>
+                  <span className={style.awardYear}>2024</span>
+                </div>
               </div>
             </div>
           </ContentBlock>
