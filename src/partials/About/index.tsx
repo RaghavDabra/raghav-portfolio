@@ -163,13 +163,21 @@ function About() {
       <Container grid>
         <Row start={1} end={3}>
           <ContentBlock>
-            <List>
-              <ListItem end="x6">Awwwards</ListItem>
-              <ListItem end="x6">CSS Design Awards</ListItem>
-              <ListItem end="x1">FWA</ListItem>
-              <ListItem end="x3">iF Design Award</ListItem>
-              <ListItem end="x8">Other</ListItem>
-            </List>
+            <div className={style.awardsSection}>
+              <h3 className={style.awardsTitle}>Awards & Recognition</h3>
+              <div className={style.awardsList}>
+                <div className={style.awardItem}>
+                  <div className={style.awardBadge}>1× Silver Award</div>
+                  <p>For preventing potential global market disruption through critical production system optimization</p>
+                  <span className={style.awardYear}>2023</span>
+                </div>
+                <div className={style.awardItem}>
+                  <div className={style.awardBadge}>4× Bronze Awards</div>
+                  <p>For production stability and CRQ excellence</p>
+                  <span className={style.awardYear}>2023</span>
+                </div>
+              </div>
+            </div>
           </ContentBlock>
         </Row>
       </Container>

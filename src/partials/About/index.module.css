@@ -37,3 +37,63 @@
     }
   }
 }
+.awardsSection {
+  margin-top: var(--spc-8);
+}
+
+.awardsTitle {
+  @mixin highlight;
+
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--spc-5);
+}
+
+.awardsList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spc-5);
+
+  @media (--md-p) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.awardItem {
+  padding: var(--spc-4);
+  border-left: 3px solid var(--color-white);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-left-color: var(--color-white);
+  }
+
+  p {
+    @mixin body-3;
+
+    margin: var(--spc-2) 0;
+    line-height: 1.6;
+  }
+}
+
+.awardBadge {
+  @mixin body-1;
+
+  font-weight: var(--fw-semibold);
+  color: var(--color-white);
+  display: inline-block;
+  padding: var(--spc-1) var(--spc-2);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  margin-bottom: var(--spc-2);
+}
+
+.awardYear {
+  @mixin desc;
+
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  display: block;
+}
