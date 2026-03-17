@@ -9,7 +9,7 @@ type Project = {
 
 const initialState: Project[] = [
   {
-    name: 'AI Requirements Assistant',
+    name: 'AI Rqts Assistant',
     url: 'ai-requirements',
     videoID: 'aiReqReel'
   },

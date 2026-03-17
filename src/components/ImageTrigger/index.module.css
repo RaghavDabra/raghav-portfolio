@@ -3,6 +3,8 @@
   font-style: normal;
   font-weight: var(--fw-semibold);
   white-space: nowrap;
+  opacity: 1;
+  visibility: visible;
 
   &::before {
     position: absolute;

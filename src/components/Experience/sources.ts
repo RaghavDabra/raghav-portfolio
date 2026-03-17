@@ -138,6 +138,26 @@ const sources: Sources = [
     name: 'thales',
     type: 'texture',
     path: '/companies/thales.png'
+  },
+  {
+    name: 'aiReqTech',
+    type: 'texture',
+    path: '/projects/ai-req/tech-image.png'
+  },
+  {
+    name: 'finreconTech',
+    type: 'texture',
+    path: '/projects/finrecon/tech-image.png'
+  },
+  {
+    name: 'connectTeamsTech',
+    type: 'texture',
+    path: '/projects/connect-teams/tech-image.png'
+  },
+  {
+    name: 'aiAgentTech',
+    type: 'texture',
+    path: '/projects/ai-agent/tech-image.png'
   }
 ]
 

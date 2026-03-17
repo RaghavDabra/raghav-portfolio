@@ -115,7 +115,7 @@ export default class Portfolio {
 
     this.projects = [
       {
-        name: 'AI Requirements Assistant',
+        name: 'AI Rqts Assistant',
         url: 'ai-requirements',
         video: document.getElementById('aiReqReel') as HTMLVideoElement
       },
