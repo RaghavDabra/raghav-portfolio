@@ -9,18 +9,18 @@
   "modules": [
     {
       "component": "TextIntro",
-      "text": "An intelligent AI assistant powered by Anthropic Claude API and LangChain that automates requirements elicitation and user story generation. This system reduces documentation time by ~50% through advanced RAG (Retrieval-Augmented Generation) pipelines and AI-assisted development workflows."
+      "text": "An intelligent AI assistant powered by Anthropic Claude API and LangChain that automates requirements elicitation and user story generation.\n\nThis system reduces documentation time by ~50% through advanced RAG (Retrieval-Augmented Generation) pipelines and AI-assisted development workflows."
     },
     {
       "component": "TextTwoColumns",
       "title": "The Challenge",
-      "text": "Requirements gathering is time-consuming and error-prone. Teams spend countless hours writing and refining user stories. The goal was to build an intelligent system that could understand project context, analyze existing documentation, and automatically generate comprehensive, well-structured user stories with minimal manual intervention.",
+      "text": "Requirements gathering is time-consuming and error-prone. Teams spend countless hours writing and refining user stories.\n\nThe goal was to build an intelligent system that could understand project context, analyze existing documentation, and automatically generate comprehensive, well-structured user stories with minimal manual intervention.",
       "technologies": ["Anthropic Claude API", "LangChain", "RAG Pipelines", "Python", "FastAPI", "React", "TypeScript", "Cursor AI"]
     },
     {
       "component": "TextTwoColumns",
       "title": "Solution Architecture",
-      "text": "Built a full-stack system with a Python FastAPI backend and React frontend. The backend integrates Anthropic Claude API with LangChain for RAG pipelines, allowing the system to retrieve relevant context from documentation and generate accurate requirements. Cursor AI accelerated development iteration time by ~30%, enabling rapid prototyping and refinement.",
+      "text": "Built a full-stack system with a Python FastAPI backend and React frontend.\n\nThe backend integrates Anthropic Claude API with LangChain for RAG pipelines, allowing the system to retrieve relevant context from documentation and generate accurate requirements.\n\nCursor AI accelerated development iteration time by ~30%, enabling rapid prototyping and refinement.",
       "numbers": [
         {
           "value": "50%",
@@ -39,12 +39,12 @@
     {
       "component": "TextTwoColumns",
       "title": "Key Features",
-      "text": "The system features intelligent context retrieval, multi-format input support (text, documents, code), structured JSON output for seamless integration, and interactive story cards for easy review and editing. The RAG pipeline ensures responses are grounded in project-specific documentation, maintaining accuracy and relevance."
+      "text": "The system features intelligent context retrieval, multi-format input support (text, documents, code), and structured JSON output for seamless integration.\n\nInteractive story cards enable easy review and editing. The RAG pipeline ensures responses are grounded in project-specific documentation, maintaining accuracy and relevance."
     },
     {
       "component": "TextTwoColumns",
-      "title": "Impact",
-      "text": "Deployed at Queue Solutions (University of Melbourne) for teaching, consulting, and academic use cases. The system is now being used to accelerate requirements modelling across multiple research projects, demonstrating the practical value of AI-assisted development workflows in enterprise settings."
+      "title": "Impact & Deployment",
+      "text": "Deployed at Queue Solutions (University of Melbourne) for teaching, consulting, and academic use cases.\n\nThe system is now being used to accelerate requirements modelling across multiple research projects, demonstrating the practical value of AI-assisted development workflows in enterprise settings."
     }
   ]
 }

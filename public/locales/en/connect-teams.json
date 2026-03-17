@@ -1,6 +1,6 @@
 {
   "title": "Connect Teams - Enterprise Collaboration Platform",
-  "image": "/projects/connect-teams/tech-hero.png",
+  "image": "/projects/connect-teams/hero.jpeg",
   "live": "https://github.com/RaghavDabra/connect-teams",
   "role": "Lead Architect & Full-Stack Engineer",
   "agency": "Personal Project",
@@ -9,18 +9,18 @@
   "modules": [
     {
       "component": "TextIntro",
-      "text": "Connect Teams is a production-ready enterprise collaboration platform architected for 1M+ concurrent users. This comprehensive system demonstrates full-stack mastery: microservices backend with NestJS, modern React frontend with Next.js, real-time communication via Socket.io, peer-to-peer video with WebRTC, and enterprise-grade infrastructure with Docker + Kubernetes. Designed to handle millions of transactions monthly with sub-100ms latency."
-    }
+      "text": "Connect Teams is a production-ready enterprise collaboration platform architected for 1M+ concurrent users.\n\nThis comprehensive system demonstrates full-stack mastery: microservices backend with NestJS, modern React frontend with Next.js, real-time communication via Socket.io, peer-to-peer video with WebRTC, and enterprise-grade infrastructure with Docker + Kubernetes.\n\nDesigned to handle millions of transactions monthly with sub-100ms latency."
+    },
     {
       "component": "TextTwoColumns",
       "title": "Architecture Overview",
-      "text": "A comprehensive microservices + event-driven architecture supporting authentication, organizations, teams, channels, direct messaging, video calls, task management, and file uploads. The system uses PostgreSQL for persistence, Redis for caching, Socket.io for real-time events, and WebRTC for peer-to-peer video communication.",
+      "text": "A comprehensive microservices + event-driven architecture supporting authentication, organizations, teams, channels, direct messaging, video calls, task management, and file uploads.\n\nThe system uses PostgreSQL for persistence, Redis for caching, Socket.io for real-time events, and WebRTC for peer-to-peer video communication.",
       "technologies": ["Next.js", "NestJS", "TypeScript", "PostgreSQL", "Redis", "Socket.io", "WebRTC", "Docker", "Kubernetes"]
     },
     {
       "component": "TextTwoColumns",
       "title": "Core Features",
-      "text": "Real-time messaging with threads and reactions, video/audio calls with WebRTC, task management with Kanban boards, calendar views, file management with S3 pre-signed URLs, multi-tenant organizations, JWT + OAuth authentication, and MFA support. The system is designed for enterprise-grade reliability and scalability.",
+      "text": "Real-time messaging with threads and reactions, video/audio calls with WebRTC, task management with Kanban boards, and calendar views.\n\nFile management with S3 pre-signed URLs, multi-tenant organizations, JWT + OAuth authentication, and MFA support.\n\nDesigned for enterprise-grade reliability and scalability.",
       "numbers": [
         {
           "value": "18",
@@ -39,12 +39,12 @@
     {
       "component": "TextTwoColumns",
       "title": "Deployment & DevOps",
-      "text": "Containerized with Docker across 3 environments (dev, staging, prod). Kubernetes orchestration ensures high availability and auto-scaling. GitHub Actions CI/CD pipelines achieve sub-5-minute deployments. Infrastructure as Code with Terraform for AWS resources including S3, networking, and compute."
+      "text": "Containerized with Docker across 3 environments (dev, staging, prod).\n\nKubernetes orchestration ensures high availability and auto-scaling. GitHub Actions CI/CD pipelines achieve sub-5-minute deployments.\n\nInfrastructure as Code with Terraform for AWS resources including S3, networking, and compute."
     },
     {
       "component": "TextTwoColumns",
       "title": "Security & Performance",
-      "text": "Implements JWT + OAuth for authentication, MFA for enhanced security, and follows OWASP best practices. Redis caching strategy optimizes database queries. Soft-delete patterns maintain data integrity. The system is designed to handle millions of transactions monthly with sub-100ms latency."
+      "text": "Implements JWT + OAuth for authentication, MFA for enhanced security, and follows OWASP best practices.\n\nRedis caching strategy optimizes database queries. Soft-delete patterns maintain data integrity.\n\nDesigned to handle millions of transactions monthly with sub-100ms latency."
     }
   ]
 }
