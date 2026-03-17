@@ -128,6 +128,11 @@ const sources: Sources = [
     name: 'unimelb',
     type: 'texture',
     path: '/companies/unimelb.png'
+  },
+  {
+    name: 'boa',
+    type: 'texture',
+    path: '/companies/boa.png'
   }
 ]
 

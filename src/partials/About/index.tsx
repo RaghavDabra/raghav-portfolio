@@ -31,7 +31,7 @@ function About() {
                   i18nKey={`about.intro.0`}
                   components={{
                     ImageMelbourne: <ImageTrigger name="melbourne" sizes={[2, 2]} />,
-                    ImageBoA: <ImageTrigger name="venice" />,
+                    ImageBoA: <ImageTrigger name="boa" sizes={[2.5, 1.5]} />,
                     ImageUniMelb: <ImageTrigger name="unimelb" sizes={[2, 2]} />
                   }}
                 />
@@ -62,7 +62,7 @@ function About() {
                   i18nKey={`about.intro.${i + 2}`}
                   components={{
                     ImageMelbourne: <ImageTrigger name="melbourne" sizes={[2, 2]} />,
-                    ImageBoA: <ImageTrigger name="venice" />,
+                    ImageBoA: <ImageTrigger name="boa" sizes={[2.5, 1.5]} />,
                     ImageUniMelb: <ImageTrigger name="unimelb" sizes={[2, 2]} />
                   }}
                 />
