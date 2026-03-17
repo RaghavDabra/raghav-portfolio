@@ -51,6 +51,9 @@ function About() {
               }}
             />
           </Heading>
+          <div className={style.boaImageContainer}>
+            <ImageTrigger name="boa" sizes={[3, 2]} />
+          </div>
         </Row>
       </Container>
       <Container grid>
