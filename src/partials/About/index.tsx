@@ -176,6 +176,11 @@ function About() {
                   <p>For production stability and CRQ excellence</p>
                   <span className={style.awardYear}>2023</span>
                 </div>
+                <div className={style.awardItem}>
+                  <div className={style.awardBadge}>7× IBM Security Certifications</div>
+                  <p>Including penetration testing, incident response, and cybersecurity fundamentals</p>
+                  <span className={style.awardYear}>2022-2024</span>
+                </div>
               </div>
             </div>
           </ContentBlock>
