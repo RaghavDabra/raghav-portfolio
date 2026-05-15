@@ -121,3 +121,11 @@
     width: 100%;
   }
 }
+
+.techFallback {
+  display: flex;
+  align-items: flex-end;
+  min-height: 40px;
+  padding: var(--spc-2);
+  border: 1px solid rgb(var(--color-whiteRGB) / 15%);
+}

@@ -76,20 +76,26 @@ const TextTwoColumns = ({ title, text, numbers, technologies }: Props) => {
             )}
             {technologies && (
               <div className={style.techContainer}>
-                {technologies.map((technology, index) => (
-                  <div key={index} className={style.tech}>
-                    <figure className={style.figure}>
-                      <img
-                        src={techs[technology.toLowerCase()]}
-                        alt={technology}
-                        title={technology}
-                      />
-                      <figcaption>
-                        <p className={style.label}>{technology}</p>
-                      </figcaption>
-                    </figure>
-                  </div>
-                ))}
+                {technologies.map((technology, index) => {
+                  const src = techs[technology.toLowerCase()]
+
+                  return (
+                    <div key={index} className={style.tech}>
+                      {src ? (
+                        <figure className={style.figure}>
+                          <img src={src} alt={technology} title={technology} />
+                          <figcaption>
+                            <p className={style.label}>{technology}</p>
+                          </figcaption>
+                        </figure>
+                      ) : (
+                        <div className={style.techFallback}>
+                          <p className={style.label}>{technology}</p>
+                        </div>
+                      )}
+                    </div>
+                  )
+                })}
               </div>
             )}
           </>
