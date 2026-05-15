@@ -6,31 +6,22 @@ import { Howl } from 'howler'
 
 // Hooks
 import { useEffect, useCallback, useRef, useState } from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 function useBackgroundAudio() {
   const audio = useRef<Howl | null>(null)
   const app = useSelector((state: RootState) => state.app)
+  const audioState = useSelector((state: RootState) => state.audio)
+  const dispatch = useDispatch()
   const [isPlaying, setPlaying] = useState(false)
 
   const toggle = useCallback(() => {
-    if (!audio.current) return
-
-    const a = audio.current
-    const isPlaying = a.playing()
-
-    if (isPlaying) {
-      a.fade(1, 0, 1000)
-      a.once('fade', () => {
-        a.stop()
-        setPlaying(false)
-      })
+    if (audioState.mute) {
+      dispatch.audio.unmute()
     } else {
-      setPlaying(true)
-      a.play()
-      a.fade(0, 1, 1000)
+      dispatch.audio.mute()
     }
-  }, [])
+  }, [audioState.mute, dispatch.audio])
 
   useEffect(() => {
     audio.current = new Howl({
@@ -41,12 +32,30 @@ function useBackgroundAudio() {
   }, [])
 
   useEffect(() => {
-    if (app.ready && audio.current) {
-      setPlaying(true)
-      audio.current.play()
-      audio.current.fade(0, 1, 3000)
+    if (!app.ready || !audio.current) return
+
+    const a = audio.current
+
+    if (audioState.mute) {
+      if (!a.playing()) {
+        setPlaying(false)
+        return
+      }
+
+      a.fade(1, 0, 800)
+      a.once('fade', () => {
+        a.stop()
+        setPlaying(false)
+      })
+      return
     }
-  }, [app.ready])
+
+    if (!a.playing()) {
+      setPlaying(true)
+      a.play()
+      a.fade(0, 1, 1200)
+    }
+  }, [app.ready, audioState.mute])
 
   return {
     toggle,

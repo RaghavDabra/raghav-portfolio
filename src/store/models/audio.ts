@@ -4,7 +4,7 @@ import type { RootModel } from '../models'
 const initialState: {
   mute: boolean
 } = {
-  mute: false
+  mute: true
 }
 
 export const audio = createModel<RootModel>()({
