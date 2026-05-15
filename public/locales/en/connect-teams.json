@@ -9,30 +9,30 @@
   "modules": [
     {
       "component": "TextIntro",
-      "text": "Connect Teams is a comprehensive team collaboration and project management platform built with modern full-stack technologies.\n\nDesigned to enable seamless communication, task tracking, and project organization for distributed teams with enterprise-grade security and performance."
+      "text": "Connect Teams is a team collaboration and project management platform built with modern full-stack technologies.\n\nIt brings messaging, task tracking, and project organization into a single workflow for distributed teams."
     },
     {
       "component": "TextTwoColumns",
       "title": "The Challenge",
-      "text": "Teams need a unified platform for collaboration that combines communication, task management, and project tracking without complexity.\n\nThe solution needed to support real-time updates, handle concurrent users, maintain data integrity, and scale to millions of transactions monthly.",
+      "text": "Teams need a unified platform for collaboration that combines communication, task management, and project tracking without unnecessary complexity.\n\nThe solution needed real-time updates, concurrent usage, and strong data integrity guarantees.",
       "technologies": ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Redis", "Docker", "Kubernetes"]
     },
     {
       "component": "TextTwoColumns",
       "title": "Architecture & Tech Stack",
-      "text": "Built with React + TypeScript frontend for responsive UI and type-safe development.\n\nNode.js + Express backend with PostgreSQL for relational data and Redis for caching and real-time updates.\n\nContainerized with Docker and orchestrated with Kubernetes for high availability and auto-scaling.",
+      "text": "Built with a React + TypeScript frontend for a responsive UI and type-safe development.\n\nNode.js + Express backend with PostgreSQL for relational data and Redis for caching and real-time updates.\n\nContainerized with Docker with a deployment setup that can be adapted to managed container platforms.",
       "numbers": [
         {
           "value": "3",
-          "label": "Deployment environments"
+          "label": "Core pillars: chat, tasks, projects"
         },
         {
-          "value": "<100ms",
-          "label": "API response latency"
+          "value": "RBAC",
+          "label": "Role-based access control"
         },
         {
-          "value": "99.9%",
-          "label": "Uptime SLA"
+          "value": "CI/CD",
+          "label": "Automated deployments"
         }
       ]
     },
@@ -44,12 +44,12 @@
     {
       "component": "TextTwoColumns",
       "title": "Deployment & DevOps",
-      "text": "Containerized with Docker across 3 environments (dev, staging, prod).\n\nKubernetes orchestration ensures high availability and auto-scaling. GitHub Actions CI/CD pipelines achieve sub-5-minute deployments.\n\nInfrastructure as Code with Terraform for AWS resources including S3, networking, and compute."
+      "text": "Containerized with Docker across dev/staging/prod environments.\n\nA CI/CD pipeline automates build, test, and deployment steps to keep releases repeatable and low-risk.\n\nThe setup can be integrated with Infrastructure as Code depending on the target cloud environment."
     },
     {
       "component": "TextTwoColumns",
       "title": "Security & Performance",
-      "text": "Implements JWT + OAuth for authentication, MFA for enhanced security, and follows OWASP best practices.\n\nRedis caching strategy optimizes database queries. Soft-delete patterns maintain data integrity.\n\nDesigned to handle millions of transactions monthly with sub-100ms latency."
+      "text": "Uses JWT-based authentication and follows OWASP-aligned security practices (input validation, secure defaults, least privilege).\n\nRedis caching reduces repetitive database work, and soft-delete patterns help preserve auditability and data integrity."
     },
     {
       "component": "Media",

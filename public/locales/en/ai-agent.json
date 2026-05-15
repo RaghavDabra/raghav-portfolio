@@ -9,37 +9,37 @@
   "modules": [
     {
       "component": "TextIntro",
-      "text": "An advanced AI agent framework leveraging large language models, multi-step reasoning, and tool integration for autonomous task execution.\n\nBuilt with production-grade reliability, this system demonstrates mastery of AI orchestration, prompt engineering, and agentic workflows."
+      "text": "An AI agent framework for orchestrating large language models with multi-step planning, tool use, and memory.\n\nDesigned with production constraints in mind: clear interfaces, failure handling, and predictable execution."
     },
     {
       "component": "TextTwoColumns",
       "title": "Architecture & Design",
-      "text": "The framework integrates LLM inference engines with tool-use capabilities, memory management, and reasoning loops.\n\nSupports multi-turn conversations, function calling, and complex task decomposition.\n\nBuilt with scalability and reliability as core principles.",
-      "technologies": ["LLM APIs", "Tool Integration", "Memory Systems", "Reasoning Engines", "Python", "FastAPI"]
+      "text": "The framework integrates model providers with tool execution, memory management, and planning loops.\n\nSupports multi-turn conversations, structured outputs, and task decomposition.\n\nBuilt to be extensible so new tools and skills can be added without changing the core runtime.",
+      "technologies": ["LLM APIs", "Tool Integration", "Memory Systems", "Planning Loops", "Python", "FastAPI"]
     },
     {
       "component": "TextTwoColumns",
       "title": "Key Capabilities",
-      "text": "Multi-step reasoning with chain-of-thought prompting, dynamic tool selection and execution, and context management across conversations.\n\nError handling and recovery with performance optimization. The system can autonomously plan, execute, and adapt strategies based on outcomes.",
+      "text": "Multi-step planning, dynamic tool selection, and context management across conversations.\n\nIncludes guardrails for malformed outputs, retries, and graceful degradation. The agent can plan, execute, and adapt based on outcomes.",
       "numbers": [
         {
-          "value": "100%",
-          "label": "Task completion rate"
-        },
-        {
-          "value": "<2s",
-          "label": "Average response time"
-        },
-        {
           "value": "10+",
-          "label": "Integrated tools"
+          "label": "Reusable tools & skills"
+        },
+        {
+          "value": "JSON",
+          "label": "Structured outputs"
+        },
+        {
+          "value": "Retries",
+          "label": "Failure recovery"
         }
       ]
     },
     {
       "component": "TextTwoColumns",
       "title": "Production Features",
-      "text": "Robust error handling, automatic retries, rate limiting, and cost optimization.\n\nComprehensive logging and monitoring. The framework is designed for enterprise deployment with alerting and performance analytics built-in."
+      "text": "Robust error handling, automatic retries, and basic rate limiting patterns.\n\nIncludes logging hooks and observability-friendly events so the runtime can be monitored in production."
     }
   ]
 }
