@@ -57,19 +57,6 @@ function Portfolio() {
       </Container>
 
       <div className={style.cardContainer} id="card-container" />
-
-      <video id="aiReqReel" autoPlay muted loop playsInline className={style.video}>
-        <source src="/projects/ai-req/reel.mp4" type="video/mp4" />
-      </video>
-      <video id="finreconReel" autoPlay muted loop playsInline className={style.video}>
-        <source src="/projects/finrecon/reel.mp4" type="video/mp4" />
-      </video>
-      <video id="connectTeamsReel" autoPlay muted loop playsInline className={style.video}>
-        <source src="/projects/connect-teams/reel.mp4" type="video/mp4" />
-      </video>
-      <video id="aiAgentReel" autoPlay muted loop playsInline className={style.video}>
-        <source src="/projects/ai-agent/reel.mp4" type="video/mp4" />
-      </video>
     </Section>
   )
 }

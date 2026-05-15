@@ -51,7 +51,7 @@ type ItemSnapshot = {
 type Project = {
   name: string
   url: string
-  video: HTMLVideoElement
+  textureName: string
 }
 
 export default class Portfolio {
@@ -115,24 +115,24 @@ export default class Portfolio {
 
     this.projects = [
       {
-        name: 'AI Rqts Assistant',
+        name: 'AI Requirements Assistant',
         url: 'ai-requirements',
-        video: document.getElementById('aiReqReel') as HTMLVideoElement
+        textureName: 'aiReqHero'
       },
       {
         name: 'FinRecon',
         url: 'finrecon',
-        video: document.getElementById('finreconReel') as HTMLVideoElement
+        textureName: 'finreconHero'
       },
       {
         name: 'Connect Teams',
         url: 'connect-teams',
-        video: document.getElementById('connectTeamsReel') as HTMLVideoElement
+        textureName: 'connectTeamsHero'
       },
       {
         name: 'AI Agent Framework',
         url: 'ai-agent',
-        video: document.getElementById('aiAgentReel') as HTMLVideoElement
+        textureName: 'aiAgentHero'
       }
     ]
 
@@ -198,13 +198,14 @@ export default class Portfolio {
       // Geometry
       const geometry = new THREE.PlaneGeometry(0.7, 0.5, 12, 12)
 
-      // Play video
-      const { video, name, url } = this.projects[i]
-      video.play()
+      const { textureName, name, url } = this.projects[i]
+      const texture = this.resources.items[textureName] as THREE.Texture
+      texture.encoding = THREE.sRGBEncoding
+      texture.needsUpdate = true
 
       const uniforms = {
         iFactor: { value: 2 },
-        iChannel0: { value: new THREE.VideoTexture(video) },
+        iChannel0: { value: texture },
         iChannel1: { value: this.resources.items.noise },
         iColorOuter: { value: this.debugObject.iColorOuter },
         iColorInner: { value: this.debugObject.iColorInner },
@@ -238,6 +239,7 @@ export default class Portfolio {
       })
       clickableMesh.addEventListener(ThreeMouseEventType.OVER, () => {
         window.store.dispatch.pointer.setType('hover')
+        if (window.store.getState().audio.mute) return
         const index = randomIntFromInterval(1, this.howls.length - 1)
         if (this.howls[index]) {
           this.howls[index].play()
