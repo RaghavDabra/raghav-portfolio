@@ -1,6 +1,14 @@
 .root {
+  @mixin body-3;
+
   position: relative;
-  overflow: auto;
+  overflow: hidden;
+  padding: var(--spc-5);
+  border: 1px solid rgb(var(--color-whiteRGB) / 12%);
+  border-radius: 16px;
+  background: rgb(var(--color-blackRGB) / 22%);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   transform: translate3d(0, 0, 0) scale(1);
   transition: all 1s var(--power3-ease-out);
   user-select: none;
@@ -8,6 +16,11 @@
 
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  @media (--md) {
+    padding: var(--spc-6);
+    border-radius: 20px;
   }
 }
 
@@ -20,6 +33,17 @@
 .front {
   display: none;
   pointer-events: none;
+}
+
+.base,
+.front {
+  div + div {
+    margin-top: var(--spc-3);
+  }
+
+  p {
+    margin: 0;
+  }
 }
 
 .reveal.isDesktop {
