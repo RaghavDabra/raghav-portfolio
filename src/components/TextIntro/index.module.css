@@ -17,3 +17,11 @@
     transition: all 2s var(--expo-ease-in-out) calc(var(  --modal-enter-delay) + 0.5s);
   }
 }
+
+.paragraph {
+  margin: 0;
+
+  & + & {
+    margin-top: var(--spc-3);
+  }
+}

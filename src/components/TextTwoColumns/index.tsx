@@ -46,6 +46,7 @@ const TextTwoColumns = ({ title, text, numbers, technologies }: Props) => {
   const classes = cn(style.root, ts && style[ts], {
     [style.visible]: inView
   })
+  const htmlText = text.replace(/\n{2,}/g, '<br /><br />').replace(/\n/g, '<br />')
 
   return (
     <div className={classes}>
@@ -59,7 +60,7 @@ const TextTwoColumns = ({ title, text, numbers, technologies }: Props) => {
         </Row>
         <Row start={2} end={2}>
           <>
-            <div className={style.text} dangerouslySetInnerHTML={{ __html: text }} />
+            <div className={style.text} dangerouslySetInnerHTML={{ __html: htmlText }} />
             {numbers && (
               <div className={style.numbersContainer}>
                 {numbers.map(({ value, label }, index) => (
