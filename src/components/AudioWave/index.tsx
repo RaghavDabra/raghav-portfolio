@@ -11,7 +11,13 @@ function AudioWave() {
   })
 
   return (
-    <button className={classes} onClick={toggle} type="button" aria-label="Toggle sound">
+    <button
+      className={classes}
+      onClick={toggle}
+      type="button"
+      aria-label={isPlaying ? 'Turn sound off' : 'Turn sound on'}
+      aria-pressed={isPlaying}
+    >
       <span className={style.wave} aria-hidden="true">
         <span className={style.bar} />
         <span className={style.bar} />
@@ -19,6 +25,7 @@ function AudioWave() {
         <span className={style.bar} />
         <span className={style.bar} />
       </span>
+      <span className={style.label}>{isPlaying ? 'Sound: On' : 'Sound: Off'}</span>
     </button>
   )
 }

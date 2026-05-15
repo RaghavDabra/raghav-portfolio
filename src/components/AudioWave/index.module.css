@@ -1,8 +1,17 @@
 .root {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spc-2);
   padding: var(--spc-1) 0 var(--spc-1) var(--spc-2);
   border: 0;
   background-color: transparent;
   cursor: none;
+}
+
+.label {
+  @mixin desc;
+
+  color: rgb(var(--color-whiteRGB) / 80%);
 }
 
 .wave {
