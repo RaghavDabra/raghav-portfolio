@@ -17,90 +17,215 @@
   }
 }
 
-.awardsTitle {
-  margin-top: var(--spc-10);
-}
-
 .section {
   margin-top: var(--content-block-margin-top);
 }
 
-.columns {
+/* ─── Shared Card Styles ─── */
 
-  @media (--md-l) {
-    display: flex;
-    flex-direction: row;
-    gap: var(--spc-4);
-
-    > * {
-      flex: 1;
-    }
-  }
+.cardBadge {
+  display: inline-block;
+  padding: var(--spc-_5) var(--spc-2);
+  border-radius: 100px;
+  background: rgba(139, 92, 246, 0.15);
+  color: rgba(196, 167, 255, 0.9);
+  font-size: 12px;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  align-self: flex-start;
+  margin-bottom: var(--spc-2);
 }
-.awardsSection {
+
+.bioText {
+  @mixin body-2;
+
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ─── Bio Intro ─── */
+
+.bioCard {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--spc-4);
+}
+
+/* ─── Highlight Card (2+ years) ─── */
+
+.highlightCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spc-3);
   margin-top: var(--spc-8);
+  border-left: 3px solid rgba(139, 92, 246, 0.5);
 }
 
-.awardsTitle {
+.highlightText {
   @mixin highlight;
 
-  font-weight: var(--fw-semibold);
-  margin-bottom: var(--spc-5);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.4;
+  margin: 0;
 }
 
-.awardsList {
+.expEntry {
+  padding-top: var(--spc-3);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  &:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+.expCompany {
+  font-family: var(--font-family-heading);
+  font-size: var(--fs-body-1);
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 var(--spc-_5);
+}
+
+.expRole {
+  font-size: 13px;
+  color: rgba(196, 167, 255, 0.8);
+  letter-spacing: 0.03em;
+  margin: 0 0 var(--spc-2);
+}
+
+.bioGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spc-5);
+  gap: var(--spc-3);
+  margin-top: var(--spc-8);
 
   @media (--md-p) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.awardItem {
-  padding: var(--spc-4);
-  border-left: 3px solid var(--color-white);
-  background: rgba(255, 255, 255, 0.02);
-  border-radius: 4px;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-left-color: var(--color-white);
-  }
-
-  p {
-    @mixin body-3;
-
-    margin: var(--spc-2) 0;
-    line-height: 1.6;
-  }
+.bioDetailCard {
+  display: flex;
+  flex-direction: column;
 }
 
-.awardBadge {
+/* ─── Metric Card Styles ─── */
+
+.cardMetric {
+  font-family: var(--font-family-heading);
+  font-size: var(--fs-display-3);
+  line-height: 1;
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin-top: var(--spc-2);
+}
+
+.cardMetricLabel {
   @mixin body-1;
 
-  font-weight: var(--fw-semibold);
-  color: var(--color-white);
-  display: inline-block;
-  padding: var(--spc-1) var(--spc-2);
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-  margin-bottom: var(--spc-2);
+  color: rgba(255, 255, 255, 0.55);
+  margin: var(--spc-1) 0 0;
 }
 
-.awardYear {
+.cardContent {
   @mixin desc;
 
   color: rgba(255, 255, 255, 0.5);
-  font-size: 12px;
-  display: block;
+  line-height: 1.7;
+  margin: var(--spc-3) 0 0;
 }
 
-.boaImageContainer {
-  margin-top: var(--spc-6);
+/* ─── Bento Achievement Grid ─── */
+
+.bentoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spc-3);
+  margin-top: var(--spc-8);
+
+  @media (--md-p) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.bentoCard {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+
+/* ─── Method / Philosophy ─── */
+
+.methodCard {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--spc-8);
+}
+
+/* ─── Tech Stack Grid ─── */
+
+.techGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spc-3);
+  margin-top: var(--spc-8);
+
+  @media (--md-p) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (--lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.techCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spc-3);
+}
+
+.techPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spc-1);
+}
+
+.techPill {
+  display: inline-block;
+  padding: var(--spc-1) var(--spc-2);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.02em;
+  transition: all 0.25s ease;
+
+  &:hover {
+    border-color: rgba(139, 92, 246, 0.4);
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--color-white);
+  }
+}
+
+/* ─── Final Statement ─── */
+
+.finalCard {
+  margin-top: var(--spc-10);
+}
+
+.finalStatement {
+  @mixin highlight;
+
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  border-left: 2px solid rgba(139, 92, 246, 0.5);
+  padding-left: var(--spc-4);
+  margin: 0;
 }
