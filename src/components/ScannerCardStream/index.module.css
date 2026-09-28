@@ -1,0 +1,195 @@
+.root {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  pointer-events: auto;
+  cursor: none;
+
+  @media (--md-p) {
+    height: 400px;
+  }
+}
+
+.particleCanvas {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 250px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.scannerCanvas {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 300px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.scannerLine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 320px;
+  width: 2px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom, transparent, #8b5cf6, transparent);
+  border-radius: 9999px;
+  z-index: 20;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 0 10px #a78bfa, 0 0 20px #a78bfa, 0 0 30px #8b5cf6, 0 0 50px #6366f1;
+  animation: scanPulse 1.5s infinite alternate ease-in-out;
+}
+
+.scannerLineHidden {
+  opacity: 0;
+}
+
+.scannerLineVisible {
+  opacity: 1;
+}
+
+.trackArea {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.cardLine {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  cursor: grab;
+  user-select: none;
+  will-change: transform;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.cardWrapper {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  flex-shrink: 0;
+}
+
+.cardNormal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  clip-path: inset(0 0 0 var(--clip-right, 0%));
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  filter: brightness(1.1) contrast(1.1);
+  transition: filter 0.3s ease-in-out;
+
+  &:hover {
+    filter: brightness(1.25) contrast(1.25);
+  }
+}
+
+.cardAscii {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  background: transparent;
+  z-index: 1;
+  clip-path: inset(0 calc(100% - var(--clip-left, 0%)) 0 0);
+}
+
+.asciiContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(220, 210, 255, 0.6);
+  font-family: monospace;
+  font-size: 11px;
+  line-height: 13px;
+  overflow: hidden;
+  white-space: pre;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  vertical-align: top;
+  box-sizing: border-box;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 30%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0.4) 80%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 30%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0.4) 80%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  animation: glitch 0.1s infinite linear alternate-reverse;
+}
+
+@keyframes glitch {
+  0%,
+  16%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  15%,
+  99% {
+    opacity: 0.9;
+  }
+
+  49% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes scanPulse {
+  0% {
+    opacity: 0.75;
+    transform: translate(-50%, -50%) scaleY(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scaleY(1.03);
+  }
+}
