@@ -20,6 +20,7 @@ import Hero from 'partials/Hero'
 import Portfolio from 'partials/Portfolio'
 import About from 'partials/About'
 import Contact from 'partials/Contact'
+import MusicPlayer from 'components/MusicPlayer'
 
 window.cursor = {
   x: 0,
@@ -129,6 +130,7 @@ function App() {
       <About />
       <Contact />
 
+      <MusicPlayer />
       {deviceHasPointer && <Pointer />}
     </>
   )
