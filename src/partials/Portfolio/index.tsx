@@ -4,10 +4,7 @@ import style from './index.module.css'
 // Components
 import Section from 'components/Section'
 import Container, { Row } from 'components/Container'
-import ContentBlock from 'components/ContentBlock'
-import Heading from 'components/Heading'
-import ImageTrigger from 'components/ImageTrigger'
-import { Trans } from 'react-i18next'
+import GlassCard from 'components/GlassCard'
 
 // Hooks
 import { useTranslation } from 'react-i18next'
@@ -15,44 +12,42 @@ import { useTranslation } from 'react-i18next'
 function Portfolio() {
   const { t } = useTranslation('translation', { keyPrefix: 'portfolio' })
   const intro: string[] = t('intro', { returnObjects: true })
-  const portfolio: string[] = t('portfolio', { returnObjects: true })
 
   return (
     <Section name="portfolio" className={style.root}>
-      <Container grid outerRightOnMobile>
-        <Row start={1} end={2}>
-          <Heading misaligned key={intro[0]}>
-            <>
-              <pre className={style.pre}>{intro[0]}</pre>
-              <Trans i18nKey="portfolio.intro.1" />
-            </>
-          </Heading>
+      <Container grid>
+        <Row start={1} end={3}>
+          <GlassCard className={style.heroPill}>
+            <span className={style.heroLabel}>I build</span>
+            <h2 className={style.heroTitle}>
+              production-grade systems <span className={style.heroAccent}>powered by AI.</span>
+            </h2>
+          </GlassCard>
         </Row>
       </Container>
-      <Container grid key={intro[2]}>
-        <Row start={3} end={1}>
-          <ContentBlock>
-            <div>{intro[2]}</div>
-            <div>{intro[3]}</div>
-          </ContentBlock>
-        </Row>
-      </Container>
-      <Container grid outerRightOnMobile className={style.projectSection}>
+
+      <Container grid>
         <Row start={2} end={2}>
-          <Heading key={portfolio[0]}>{portfolio[0]}</Heading>
+          <div className={style.introCards}>
+            <GlassCard className={style.introCard}>
+              <span className={style.cardBadge}>What I Do</span>
+              <p className={style.introText}>{intro[2]}</p>
+            </GlassCard>
+            <GlassCard className={style.introCard}>
+              <span className={style.cardBadge}>My Focus</span>
+              <p className={style.introText}>{intro[3]}</p>
+            </GlassCard>
+          </div>
         </Row>
       </Container>
-      <Container grid key={portfolio[1]}>
-        <Row start={2} end={1}>
-          <ContentBlock>
-            <div>
-              <Trans i18nKey="portfolio.portfolio.1" components={{
-                ImageBoA: <ImageTrigger name="boa" sizes={[2.5, 1.5]} />,
-                ImageThales: <ImageTrigger name="thales" sizes={[2.5, 1.5]} />
-              }} />
-              <Trans i18nKey="portfolio.portfolio.2" />
-            </div>
-          </ContentBlock>
+
+      <Container grid>
+        <Row start={2} end={2}>
+          <div className={style.ctaRow}>
+            <a href="#about" className={style.ctaPrimary}>Explore Work</a>
+            <a href="/Raghav_Dabra_Resume.docx" className={style.ctaSecondary} download>Download Resume</a>
+            <a href="mailto:raghavdabra@gmail.com" className={style.ctaGhost}>Get In Touch</a>
+          </div>
         </Row>
       </Container>
 
