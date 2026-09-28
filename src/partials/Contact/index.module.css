@@ -18,8 +18,10 @@
   }
 }
 
-.section {
-  margin: var(--spc-5) 0;
+/* ─── Email Heading ─── */
+
+.emailSection {
+  margin-bottom: var(--spc-8);
 }
 
 .emailContainer {
@@ -63,42 +65,111 @@
   }
 }
 
+/* ─── Contact Cards Grid ─── */
 
-.list {
-  padding-top: var(--spc-5);
-  padding-left: 0;
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spc-3);
 
-  @media (--md-l) {
-    padding-top: 0;
-    padding-left: var(--spc-10);
+  @media (--md-p) {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  li {
-    list-style: none;
+.contactCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spc-2);
+}
 
-    a {
-      @mixin body-1;
+.cardBadge {
+  display: inline-block;
+  padding: var(--spc-_5) var(--spc-2);
+  border-radius: 100px;
+  background: rgba(139, 92, 246, 0.15);
+  color: rgba(196, 167, 255, 0.9);
+  font-size: 12px;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
 
-      line-height: 2.5;
-      @media (--md-l) {
-        line-height: 1.7;
-      }
+.contactText {
+  @mixin body-2;
+
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ─── Social Links ─── */
+
+.socialList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spc-1);
+
+  li a {
+    @mixin body-2;
+
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spc-1);
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.25s ease;
+
+    &:hover {
+      color: var(--color-white);
+    }
+
+    svg {
+      width: 14px;
+      height: 14px;
+      opacity: 0.5;
+      transition: opacity 0.25s ease;
+    }
+
+    &:hover svg {
+      opacity: 1;
     }
   }
 }
-.resumeButton {
-  @mixin body-1;
 
-  display: inline-block;
-  padding: var(--spc-3) var(--spc-4);
-  margin-top: var(--spc-5);
-  border: 2px solid var(--color-white);
-  border-radius: 4px;
-  line-height: 1.5;
+/* ─── Action Links ─── */
+
+.contactLink,
+.resumeButton {
+  @mixin body-2;
+
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spc-1);
+  padding: var(--spc-2) var(--spc-4);
+  margin-top: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  background: rgba(139, 92, 246, 0.15);
+  color: var(--color-white);
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
   transition: all 0.3s ease;
+  align-self: flex-start;
 
   &:hover {
-    background: var(--color-white);
-    color: var(--color-black);
+    background: rgba(139, 92, 246, 0.3);
+    border-color: rgba(139, 92, 246, 0.6);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
+  }
+
+  svg {
+    width: 14px;
+    height: 14px;
   }
 }

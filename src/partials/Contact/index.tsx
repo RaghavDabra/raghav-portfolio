@@ -1,13 +1,10 @@
 import style from './index.module.css'
 
-// Utils
-import cn from 'classnames'
-
 // Components
 import Section from 'components/Section'
 import Container, { Row } from 'components/Container'
-import ContentBlock from 'components/ContentBlock'
 import Heading from 'components/Heading'
+import GlassCard from 'components/GlassCard'
 
 // Hooks
 import { useCallback } from 'react'
@@ -20,12 +17,8 @@ import { ExternalArrow } from 'components/Icons'
 
 function Contact() {
   const dispatch = useDispatch()
-
   const { t } = useTranslation('translation', { keyPrefix: 'contact' })
-  const intro = t('intro')
-  const socialIntro = t('social_intro')
   const resumeUrl = t('resume_url') as string
-  const resumeDownloadText = t('resume_download') as string
 
   const { ref, inView } = useInView()
 
@@ -37,29 +30,21 @@ function Contact() {
     dispatch.pointer.setType('default')
   }, [dispatch.pointer])
 
-  const emailClasses = cn({
-    [style.isEmailVisible]: inView
-  })
-
   return (
     <Section name="contact" className={style.root}>
+      {/* Email heading */}
       <Container grid>
-        <Row start={1} end={1}>
-          <ContentBlock key={intro}>
-            <div>{intro}</div>
-          </ContentBlock>
-        </Row>
         <Row start={1} end={3}>
-          <div
-            className={style.section}
-            ref={ref}
-            onMouseEnter={overHandler}
-            onMouseLeave={outHandler}
-          >
-            <Heading className={emailClasses}>
+          <div className={style.emailSection} ref={ref}>
+            <Heading className={inView ? style.isEmailVisible : ''}>
               <div>
                 <div className={style.emailContainer}>
-                  <a className={style.email} href="mailto:raghavdabra@gmail.com">
+                  <a
+                    className={style.email}
+                    href="mailto:raghavdabra@gmail.com"
+                    onMouseEnter={overHandler}
+                    onMouseLeave={outHandler}
+                  >
                     raghavdabra@gmail.com
                   </a>
                 </div>
@@ -67,15 +52,30 @@ function Contact() {
             </Heading>
           </div>
         </Row>
-        <Row start={1} end={1}>
-          <ContentBlock key={socialIntro}>
-            <div>{socialIntro}</div>
-          </ContentBlock>
-        </Row>
-        <Row start={2} end={1}>
-          <ContentBlock>
-            <div>
-              <ul className={style.list}>
+      </Container>
+
+      {/* Contact cards grid */}
+      <Container grid>
+        <Row start={1} end={3}>
+          <div className={style.contactGrid}>
+            <GlassCard className={style.contactCard}>
+              <span className={style.cardBadge}>Get In Touch</span>
+              <p className={style.contactText}>
+                Interested in working together or just want to say hi? Drop me an email and I'll get back to you.
+              </p>
+              <a
+                href="mailto:raghavdabra@gmail.com"
+                className={style.contactLink}
+                onMouseEnter={overHandler}
+                onMouseLeave={outHandler}
+              >
+                Send Email <ExternalArrow />
+              </a>
+            </GlassCard>
+
+            <GlassCard className={style.contactCard}>
+              <span className={style.cardBadge}>Connect</span>
+              <ul className={style.socialList}>
                 <li>
                   <a
                     href="https://www.linkedin.com/in/raghavdabra/"
@@ -93,7 +93,7 @@ function Contact() {
                     onMouseLeave={outHandler}
                     target="_blank"
                   >
-                    Github <ExternalArrow />
+                    GitHub <ExternalArrow />
                   </a>
                 </li>
                 <li>
@@ -117,12 +117,13 @@ function Contact() {
                   </a>
                 </li>
               </ul>
-            </div>
-          </ContentBlock>
-        </Row>
-        <Row start={1} end={1}>
-          <ContentBlock>
-            <div>
+            </GlassCard>
+
+            <GlassCard className={style.contactCard}>
+              <span className={style.cardBadge}>Resume</span>
+              <p className={style.contactText}>
+                Download my full resume with detailed experience, projects, and certifications.
+              </p>
               <a
                 href={resumeUrl}
                 className={style.resumeButton}
@@ -130,10 +131,10 @@ function Contact() {
                 onMouseLeave={outHandler}
                 download
               >
-                {resumeDownloadText} <ExternalArrow />
+                Download Resume <ExternalArrow />
               </a>
-            </div>
-          </ContentBlock>
+            </GlassCard>
+          </div>
         </Row>
       </Container>
     </Section>
